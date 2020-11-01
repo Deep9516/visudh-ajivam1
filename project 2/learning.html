@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning</title>
+    <link rel="stylesheet" href="learning.css">
+    <link rel="shortcut icon" href="book.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div id="text">
+            <h2>Visudh Ajivam</h2>
+            <h3>Home</h3>
+            <h3>Visit a Doctor</h3>
+            <h3>Book a lab test</h3>
+            <h3>Buy Medicines</h3>
+        </div>
+    </div>
+
+    <div id="body">
+        <div id="text">
+                <h1>Search the Hospitals In Your City</h1>
+                <p>Discover The Best Doctors, Clinic And Hospitals In The City </p>
+                <input type="search" placeholder="Hospitals" >
+                <button>Search</button>
+        </div>
+       
+        
+    </div>
+
+    <div id="companyprofile" style="widows:100%;height:300px;border:1px solid #000;">
+        <h1>About Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est consequatur nihil, quaerat repudiandae
+             laudantium illum perspiciatis accusamus exercitationem necessitatibus iusto odit, similique praesentium 
+             distinctio obcaecati vel? Velit animi officia harum corrupti, dolore, ipsam eligendi in vero, aperiam ullam 
+             asperiores unde dolores saepe expedita deleniti cumque recusandae rem nostrum. Unde possimus totam fugit. Iste
+              earum excepturi nemo quam explicabo iure alias dolore odio magnam eius mollitia eveniet aliquam deserunt nulla
+               veritatis consectetur modi dignissimos, totam praesentium nesciunt voluptatibus, inventore impedit vel nobis.
+                </p>
+    </div>
+
+    <div id="companymission">
+        <div id="mission" style="width:700px; height:300px;border:1px solid #000;">
+            <div id="mheader">
+                <h2 style="padding-top: 14px;">Our Mission</h2>
+            </div>
+            <p style="padding: 20px; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit doloribus nam nostrum quos, 
+                natus aperiam iusto porro voluptatum voluptatibus laboriosam doloremque! Commodi
+                 optio distinctio earum iusto repudiandae sapiente ipsam eos vel. Molestias adipisci asperiores sapiente
+                  qui maiores velit deserunt, commodi, sit quod quae recusandae, harum repellendus voluptatum nesciunt
+                   neque.
+            </p>
+        </div>
+        <div id="vision" style="width:700px; height:300px;border:1px solid #000;">
+            <div id="vheader">
+                <h2 style="padding-top: 14px;">Our vision</h2>
+            </div>
+               <p style="padding: 20px; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit doloribus nam nostrum quos, 
+                   natus aperiam iusto porro voluptatum voluptatibus laboriosam doloremque! Commodi
+                   optio distinctio earum iusto repudiandae sapiente ipsam eos vel. Molestias adipisci asperiores sapiente
+                   qui maiores velit deserunt, commodi, sit quod quae recusandae, harum repellendus voluptatum nesciunt
+                   neque.
+                </p>
+        </div>
+    </div>
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <img src="img1.jpg" style="width:100%;height:500px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img2.jpg" style="width:100%;height:500px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img3.jpg" style="width:100%;height:500px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img4.jpg" style="width:100%;height:500px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img5.jpg" style="width:100%;height:500px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img6.jpg" style="width:100%;height:500px;">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+      <script>
+          var slideIndex = 0;
+          showSlides();
+          function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++)
+          {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000);
+          }
+      </script>
+
+    <div class="footer">
+        <div class="main">
+            <p style="font-size: 30px;">VISUDH AJIVAM PVT LTD</p>
+        <div id="parentdivlink">
+        
+            <div class="link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Site Map</a>
+            </div>
+            
+        </div>
+        </div>
+        
+         <div class="main2" style="padding-left: 300px;">
+            <p style="font-size: 30px;">Contact Us</p>
+            <div id="parentdivlink">
+        
+                <div class="link">
+                    <a href="#" style="font-size: 30px;"></a> <i class="fa fa-phone" aria-hidden="true"></i>123456789</a>
+                    <a href="#">visudhajivam@gmail.com</a>
+                </div>
+                
+            </div>
+         </div>
+        
+        
+    </div>  
+</body>
+</html>
